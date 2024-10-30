@@ -1,0 +1,148 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #EDE0C8;
+    
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    
+}
+li{
+    display: inline;
+    color: rgb(174, 110, 78);
+    
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 100%;
+    height: 110px;
+    /* margin-inline: auto; */
+    overflow: hidden;
+}
+nav{
+    background-color: #c7ad7f;
+    box-shadow: 0 0 4px black;
+
+  
+}
+.navbar{
+   justify-content: space-evenly;
+   padding: 8px;
+
+}
+.logo img{
+    height: 150px;
+    width: 200px;   
+   
+}
+.nav-links ul{
+    gap: 50px;
+}
+.nav-link{
+cursor: pointer;
+}
+.nav-link:hover{
+    color:#8B4411;
+}
+
+.nav-link.active{
+    color: #8B4411;
+}
+
+.searchbar{
+   height: 40px;
+   gap: 10px;
+
+}
+.searchbar ::placeholder{
+    color: #986842;
+}
+.search{
+    width: 350px;
+    height: 100%;
+    padding-inline: 10px;
+    border-radius: 4px;
+    font-family:'Times New Roman',sans-serif;
+    font-size: 1.2rem;
+    border: 2px solid rgb(174, 110, 78);
+
+
+}
+.searchbutton{
+    height: 100%;
+    width: 80px;
+    border-radius: 4px;
+    font-family:'Times New Roman',sans-serif;
+    font-size: 1.2rem;
+    background-color: rgb(174, 110, 78);
+    border: 2px solid rgb(174, 110, 78);
+    color: #EED0B6;
+
+}
+.searchbutton:hover{
+    background-color:#A57A5A;
+}
+
+main{
+   margin-top: 5px;
+   /* margin-left: 150px; */
+   margin-bottom: 50px;
+   padding: 50px;
+}
+
+.news-card{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 28px;
+    align-items: start;
+    margin-inline: auto;
+    overflow: hidden;
+    max-width: 100%;
+
+}
+.cards{
+    width: 400px;
+    height: 480px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+.cards:hover{
+    box-shadow: 1px, 1px, 8px black;
+    background-color: #F5F5DD;
+    transform: translateY(-3px);
+}
+.card-heading img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+}
+
+
+

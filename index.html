@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/Cronicle Gazette.png" type="image/png">
+</head>
+<body>
+    <nav>
+
+          <div class="navbar container flex">
+            <a href="#" onclick="reload()" class="logo flex" >
+                <img src="/Cronicle Gazette.png" alt="Logo">
+            </a>
+
+            <div class="nav-links">
+                <ul class="flex">
+                    <!-- To make the navbar items clickable -->
+                    <li class="nav-link" id="politics" onclick="navItemClick('politics')">Politics</li>
+                    <li class="nav-link" id="finance" onclick="navItemClick('finance')">Finance</li>
+                    <li class="nav-link" id="tech" onclick="navItemClick('tech')">Technology</li>
+                    <li class="nav-link" id="health" onclick="navItemClick('health')">Healthcare</li>
+                </ul>
+            </div>
+              <div class="searchbar flex">
+                <input type="text" class="search" id="search" placeholder="eg.Olympics">
+                <button class="searchbutton" id="searchbtn">Search</button>
+              </div>  
+            
+          </div>
+    </nav>
+
+    <main>
+        <div class="news-card flex" id="news-cards">
+         
+            </div>
+    </main>
+
+    <template id="template-multiple-cards">
+        <div class="cards">
+            <div class="card-heading">
+                <img src="https://via.placeholder.com/400x200" alt="Heading" id="newsimg">
+
+            </div>
+            <div class="card-content">
+                <h3 id="title">Title</h3>
+               <h5 class="news-source" id="news-source">Date</h5>
+                <p class="news-desc" id="newsdesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ea officia ratione assumenda ipsum error veniam rem, voluptatibus modi culpa aspernatur, saepe perferendis dolor maiores temporibus repellendus quam amet tempore.</p>
+            </div>
+    </template>
+
+
+    <script src="news.js"></script>
+</body>
+</html>
